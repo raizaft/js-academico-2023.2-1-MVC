@@ -3,28 +3,51 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
     <title>Acadêmico - IFPB</title>
   </head>
 
   <body>
-    <h1>Cadastrar Aluno</h1>
-    Nome:<input id="nome" /><br />
-    Idade:<input id="idade" type="number" /><br />
-    Matrícula:<input id="matricula" /><br />
+    <div id="container">
+      <div id="divaluno">
+        <h1>Cadastrar Aluno</h1>
+        <div id="inputs">
+          <p>Nome:</p>
+          <input id="nome" /><br />
+        </div>
+        <div id="inputs">
+          <p>Idade:</p>
+          <input id="idade" type="number" /><br />
+        </div>
+        <div id="inputs">
+          <p>Matrícula:</p>
+          <input id="matricula" /><br />
+        </div>
 
-    <button onclick="controladorAluno.inserir()">Cadastrar</button>
+        <button onclick="controladorAluno.inserir()">Cadastrar</button>
 
-    <ol id="listaAlunos"></ol>
+        <ol id="listaAlunos"></ol>
+      </div>
+      <div id="divdisciplina">
+        <h1>Cadastrar Disciplina</h1>
+        <div id="inputs">
+          <p>Codigo:</p>
+          <input id="codigo" /><br />
+        </div>
+        <div id="inputs">
+          <p>Nome:</p>
+          <input id="nomeDisc" /><br />
+        </div>
+        <div id="inputs">
+          <p>Aluno:</p>
+          <input id="aluno" /><br />
+        </div>
 
-    <h1>Cadastrar Disciplina</h1>
-    Codigo:<input id="codigo" type="number" /><br />
-    Nome da Disciplina:<input id="nomeDisc" /><br />
-    Aluno:<input id="aluno" type="number" /><br />
+        <button onclick="controladorDisciplina.inserir()">Cadastrar</button>
 
-    <button onclick="controladorDisciplina.inserir()">Cadastrar</button>
-
-    <ol id="listaDisciplinas"></ol>
-
+        <ol id="listaDisciplinas"></ol>
+      </div>
+    </div>
     <script src="modelo/aluno.js"></script>
     <script src="modelo/disciplina.js"></script>
     <script src="repositorio/aluno_repositorio.js"></script>

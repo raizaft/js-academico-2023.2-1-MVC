@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #8ebfb1;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+#divaluno,
+#divdisciplina {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: baseline;
+  gap: 20px;
+}
+
+p {
+  width: 90px;
+}
+
+#inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+input {
+  border: 0;
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: 5px 10px 5px 10px;
+  border: none;
+  background-color: #cc45a8;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
